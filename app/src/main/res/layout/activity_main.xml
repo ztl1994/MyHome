@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_openBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_bt" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_openBT"
+            android:layout_marginTop="10dp"
+            android:text="@string/search" />
+
+        <TextView
+            android:id="@+id/text_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/btn_search"
+            android:text="@string/connect_state" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_search"
+            android:layout_marginTop="10dp"
+            android:text="@string/send_msg" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/bondResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bonded" />
+
+    <ListView
+        android:id="@+id/bondListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/searchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_result" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    </ListView>
+</LinearLayout>
